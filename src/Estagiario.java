@@ -17,10 +17,9 @@ public class Estagiario extends Profissional{
 
     @Override
     public void mostrarDados() {
-        System.out.println("Estagiário");
         super.mostrarDados();
-        System.out.println("A bolsa é de: R$ " + getBolsa());
-        reembolsoDespesas();
+        System.out.println("Estagiário");
+                System.out.println("A bolsa é de: R$ " + getBolsa());
     }
 
     public double getBolsa() {

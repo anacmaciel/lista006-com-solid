@@ -24,6 +24,7 @@ professor1.adicionaEstagiario(estagiario1);
         professor1.mostrarDados();
         professor2.mostrarDados();
         professor3.mostrarDados();
+        estagiario1.mostrarDados();
     }
 
 

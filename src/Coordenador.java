@@ -19,7 +19,6 @@ public class Coordenador extends Funcionario {
     @Override
     public void mostrarDados() {
         System.out.println("Coordenador");
-
         super.mostrarDados();
         System.out.println("Após reajustado seu salário será de: R$ " + aumentoSalario());
         System.out.println("Professores supervisionados:");

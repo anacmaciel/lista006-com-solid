@@ -20,6 +20,7 @@ public abstract class Funcionario  extends  Profissional{
 
     @Override
     public void mostrarDados() {
+        System.out.println("Funcionário");
         super.mostrarDados();
         System.out.println("número de registro: Orgão de lotação: ");
         System.out.println(getNumeroDeRegistro() + " " + getOrgaoDeLotacao());

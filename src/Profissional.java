@@ -10,12 +10,15 @@ public abstract  class  Profissional implements Despesas{
 
     @Override
     public void reembolsoDespesas() {
-        System.out.println("Reembolso sem regrade negócio definida");
+
+        System.out.println("Reembolso sem regra de negócio definida");
     }
 
     public void mostrarDados() {
+        System.out.println("Profissional");
         System.out.println("Nome: " + getNome());
         System.out.println("CPF: " + getCpf());
+    reembolsoDespesas();
     }
     public String getNome() {
         return nome;

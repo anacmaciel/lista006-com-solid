@@ -14,13 +14,12 @@ public class Professor extends Funcionario {
         super(nome, cpf, numeroDeRegistro, orgaoDeLotacao, salario);
         this.nivelDeGraduacao = nivelDeGraduacao;
         this.disciplinaMinistrada = disciplinaMinistrada;
-        this.quantidadeDeAlunos = quantidadeDeAlunos;
-        this.quantidadeDeturmas = quantidadeDeTurmas;
-        this.turmas = turmas;
     }
 
     public void adicionaTurma(Turma t) {
         listaDeTurmas.add(t);
+    this.setQuantidadeDeturmas(getQuantidadeDeturmas() + 1);
+    this.setQuantidadeDeAlunos(getQuantidadeDeAlunos() + t.getQuantidadeDeAlunos());
     }
 
     public void adicionaEstagiario(Estagiario e) {
@@ -39,7 +38,7 @@ public class Professor extends Funcionario {
         System.out.println("nível de graduação: " + getNivelDeGraduacao());
         System.out.println("quantidade de alunos: " + getQuantidadeDeAlunos());
         System.out.println("Quantidade de turmas: " + getQuantidadeDeturmas());
-        System.out.println("Seu salário após o reajuste será de: $ " + aumentoSalario());
+        System.out.println("O salário após o reajuste será de: $ " + aumentoSalario());
         System.out.println("Professor é responsável pelas turmas: ");
         for (Turma t : listaDeTurmas) {
             System.out.println("identificação da turma: " + t.getIdDaTurma());
@@ -95,4 +94,16 @@ public class Professor extends Funcionario {
         this.listaDeTurmas = listaDeTurmas;
     }
 
+    @Override
+    public String toString() {
+        return "Professor{" +
+                "nivelDeGraduacao='" + nivelDeGraduacao + '\'' +
+                ", disciplinaMinistrada='" + disciplinaMinistrada + '\'' +
+                ", quantidadeDeAlunos=" + quantidadeDeAlunos +
+                ", quantidadeDeturmas=" + quantidadeDeturmas +
+                ", listaDeTurmas=" + listaDeTurmas +
+                ", listaDeEstagiarios=" + listaDeEstagiarios +
+                '}';
+    }
 }
+
