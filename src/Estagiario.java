@@ -19,8 +19,8 @@ public class Estagiario extends Profissional{
     public void mostrarDados() {
         System.out.println("Estagiário");
         super.mostrarDados();
-        System.out.println("O reembolso de despesas é de: R$ " + reembolsoDespesas());
         System.out.println("A bolsa é de: R$ " + getBolsa());
+        reembolsoDespesas();
     }
 
     public double getBolsa() {

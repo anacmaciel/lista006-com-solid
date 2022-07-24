@@ -33,6 +33,7 @@ public class Professor extends Funcionario {
 
     @Override
     public void mostrarDados() {
+        System.out.println("Professor");
         super.mostrarDados();
         System.out.println("Disciplina ministrada: "+ getDisciplinaMinistrada());
         System.out.println("nível de graduação: " + getNivelDeGraduacao());
