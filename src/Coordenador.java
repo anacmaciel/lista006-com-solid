@@ -22,7 +22,9 @@ public class Coordenador extends Funcionario {
         super.mostrarDados();
         System.out.println("Após reajustado seu salário será de: R$ " + aumentoSalario());
         System.out.println("Professores supervisionados:");
-        System.out.println(listaDeProfessores);
+    for (Professor professor: listaDeProfessores) {
+        System.out.println(professor.getNome());
+    }
     }
 
 

@@ -93,17 +93,6 @@ public class Professor extends Funcionario {
     public void setListaDeTurmas(List<Turma> listaDeTurmas) {
         this.listaDeTurmas = listaDeTurmas;
     }
-
-    @Override
-    public String toString() {
-        return "Professor{" +
-                "nivelDeGraduacao='" + nivelDeGraduacao + '\'' +
-                ", disciplinaMinistrada='" + disciplinaMinistrada + '\'' +
-                ", quantidadeDeAlunos=" + quantidadeDeAlunos +
-                ", quantidadeDeturmas=" + quantidadeDeturmas +
-                ", listaDeTurmas=" + listaDeTurmas +
-                ", listaDeEstagiarios=" + listaDeEstagiarios +
-                '}';
     }
-}
+
 
